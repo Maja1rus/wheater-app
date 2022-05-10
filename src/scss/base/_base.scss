@@ -1,0 +1,67 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    font-family: var(--font-gothampro);
+    font-size: var(--size-normal);
+    line-height: 1.2;
+    color: var(--color-black);
+    font-weight: var(--font-regular);
+
+    background-color: #431098;
+    color: #F9FAFA;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+.modal-open {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media screen and(min-width:380px) {
+    .container {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
